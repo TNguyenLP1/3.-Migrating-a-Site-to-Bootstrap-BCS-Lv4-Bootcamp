@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Affiliations | Tri Nguyen Consultancy</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="visual/css/asset.css" rel="stylesheet">
+
+  <style>
+    /* ✅ Light mode defaults */
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    .affiliation-section {
+      background-color: #ffffff;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+    }
+
+    /* ✅ Dark mode overrides */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e9ecef;
+    }
+
+    body.dark-mode .navbar,
+    body.dark-mode .footer,
+    body.dark-mode .bg-white {
+      background-color: #1f1f1f !important;
+      color: #e9ecef;
+    }
+
+    body.dark-mode .affiliation-section {
+      background-color: #1f1f1f;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+    }
+
+    body.dark-mode .card {
+      background-color: #2b2b2b;
+      color: #e9ecef;
+    }
+
+    body.dark-mode .card p {
+      color: #adb5bd !important;
+    }
+
+    body.dark-mode .navbar-light .navbar-nav .nav-link {
+      color: #f8f9fa !important;
+    }
+
+    body.dark-mode .navbar-light .navbar-nav .nav-link.active {
+      color: #a78bfa !important; /* light purple accent */
+    }
+
+    body.dark-mode footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+    }
+
+    /* Optional subtle animation */
+    .transition-all {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-light transition-all">
+
+    <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.htm">
+          <img src="./visual/img/Armv2.png" alt="Tri Nguyen logo" width="48" height="56" class="me-2">
+          <div class="d-none d-md-block">
+            <div class="fw-bold">Tri Nguyen</div>
+            <small class="text-muted">Consultancy</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.htm" aria-current="page">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.htm">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="affiliation.htm">Affiliation</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.htm">Contact</a></li>
+
+            <li class="nav-item ms-3">
+              <form class="d-flex" role="search" aria-label="Site search">
+                <label for="navSearch" class="visually-hidden">Search</label>
+                <input id="navSearch" class="form-control form-control-sm" type="search" placeholder="Search">
+              </form>
+            </li>
+
+            <li class="nav-item ms-3">
+              <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false" aria-label="Toggle light/dark theme">
+                <i class="fa-regular fa-sun me-1"></i>
+                <span class="d-none d-sm-inline">Theme</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="py-5 text-center border-bottom transition-all">
+    <div class="container">
+      <h1 class="display-6 fw-bold">Professional Affiliations</h1>
+      <p class="lead text-muted">
+        Our credibility is built on international recognition and affiliation with globally respected professional bodies.
+      </p>
+    </div>
+  </section>
+
+  <!-- AFFILIATION CONTENT -->
+  <main class="py-5 transition-all">
+    <div class="container affiliation-section">
+      <div class="text-center mb-5">
+        <h2 class="h4 fw-bold">Recognised Memberships & Accreditations</h2>
+        <p class="text-muted mb-0">
+          Each membership reinforces our commitment to professional excellence, ethical practice, and evidence-based consultancy.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <img src="./visual/img/CIEH.png" class="card-img-top p-4" alt="CIEH logo">
+            <div class="card-body">
+              <h3 class="h6 fw-bold mb-2">Chartered Institute of Environmental Health (CIEH)</h3>
+              <p class="small text-muted">
+                Demonstrates professional competence in environmental and public health, with continuous development and ethical accountability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <img src="./visual/img/NEBOSH.png" class="card-img-top p-4" alt="NEBOSH logo">
+            <div class="card-body">
+              <h3 class="h6 fw-bold mb-2">National Examination Board in Occupational Safety and Health (NEBOSH)</h3>
+              <p class="small text-muted">
+                Recognised globally for workplace safety and health expertise, supporting consultancy excellence in SHE standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <img src="./visual/img/IOSH.png" class="card-img-top p-4" alt="IOSH logo">
+            <div class="card-body">
+              <h3 class="h6 fw-bold mb-2">Institution of Occupational Safety and Health (IOSH)</h3>
+              <p class="small text-muted">
+                Membership demonstrates adherence to international safety standards and leadership in workplace risk management.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <img src="./visual/img/FPH.png" class="card-img-top p-4" alt="FPH logo">
+            <div class="card-body">
+              <h3 class="h6 fw-bold mb-2">Faculty of Public Health (FPH)</h3>
+              <p class="small text-muted">
+                Promoting evidence-based public health practice, advancing community wellbeing, and supporting sustainable policy development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <img src="./visual/img/bcslogo.png" class="card-img-top p-4" alt="BCS logo">
+            <div class="card-body">
+              <h3 class="h6 fw-bold mb-2">British Computer Society (BCS)</h3>
+              <p class="small text-muted">
+                Recognition of professional excellence in computing, supporting applied innovation and consultancy across digital transformation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <img src="./visual/img/ISEP.png" class="card-img-top p-4" alt="ISEP logo">
+            <div class="card-body">
+              <h3 class="h6 fw-bold mb-2">Institute of Science and Environmental Policy (ISEP)</h3>
+              <p class="small text-muted">
+                A global forum advancing research and sustainable practices in science-led environmental management.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA SECTION -->
+  <section class="py-5 text-center transition-all">
+    <div class="container">
+      <h2 class="h5 fw-bold mb-3">Collaborate with Recognised Expertise</h2>
+      <p class="text-muted mb-4">Partner with a consultancy that meets international standards of professionalism.</p>
+      <a href="contact.htm" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-handshake me-2"></i>Connect with Us
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-top py-4 transition-all">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 Tri Nguyen Consultancy</p>
+      <small class="text-muted">ACIEH · AMRSC · AMRSB · AISEP · MBPR (Assoc.)</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Theme Toggle JS (Persistent) -->
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Apply saved theme on load
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      themeToggle.querySelector('i').classList.replace('fa-sun', 'fa-moon');
+    }
+
+    // Toggle theme on click
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const icon = themeToggle.querySelector('i');
+
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+        icon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+        localStorage.setItem('theme', 'light');
+        icon.classList.replace('fa-moon', 'fa-sun');
+      }
+    });
+  </script>
+</body>
+</html>

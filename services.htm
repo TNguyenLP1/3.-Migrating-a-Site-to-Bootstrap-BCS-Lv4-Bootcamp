@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tri Nguyen Consultancy — Services</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="visual/css/asset.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.htm">
+          <img src="./visual/img/Armv2.png" alt="Tri Nguyen logo" width="48" height="56" class="me-2">
+          <div class="d-none d-md-block">
+            <div class="fw-bold">Tri Nguyen</div>
+            <small class="text-muted">Consultancy</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.htm" aria-current="page">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.htm">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="affiliation.htm">Affiliation</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.htm">Contact</a></li>
+
+            <li class="nav-item ms-3">
+              <form class="d-flex" role="search" aria-label="Site search">
+                <label for="navSearch" class="visually-hidden">Search</label>
+                <input id="navSearch" class="form-control form-control-sm" type="search" placeholder="Search">
+              </form>
+            </li>
+
+            <li class="nav-item ms-3">
+              <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false" aria-label="Toggle light/dark theme">
+                <i class="fa-regular fa-sun me-1"></i>
+                <span class="d-none d-sm-inline">Theme</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container py-5">
+
+    <!-- Page header -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-8">
+        <h1 class="h3 mb-1">Service Charges</h1>
+        <p class="text-muted mb-0">Transparent pricing for environmental, S.H.E., quality auditing, and bespoke consultancy work. Prices exclude VAT.</p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quoteModal">
+          <i class="fa-solid fa-envelope-circle-check me-2"></i>Request Quote
+        </button>
+      </div>
+    </div>
+
+    <!-- Services cards -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="./visual/img/ISEP.png" alt="ISEP logo" width="80" height="32" class="me-3">
+                <h3 class="h6 mb-0">Environmental Survey</h3>
+              </div>
+              <p class="small text-muted">Sustainable, regulatory-compliant surveys for households, NGOs, and private industry.</p>
+              <ul class="list-unstyled small mb-0">
+                <li>Household Survey</li>
+                <li>Governmental / NGO Survey</li>
+                <li>Private Company / Boutique Projects</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end">
+              <a href="#envPricing" class="btn btn-sm btn-outline-secondary">View pricing</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="./visual/img/NEBOSH.png" alt="NEBOSH logo" width="48" height="48" class="me-3">
+                <img src="./visual/img/IOSH.png" alt="IOSH logo" width="48" height="48" class="me-3">
+                <img src="./visual/img/HSE.png" alt="HSE logo" width="48" height="48">
+              </div>
+              <h3 class="h6">S.H.E Assessment & Services</h3>
+              <p class="small text-muted">Audits and coaching-driven assessments to ensure audit-readiness and compliance.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end">
+              <a href="#shePricing" class="btn btn-sm btn-outline-secondary">View pricing</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="./visual/img/CIEH.png" alt="CIEH logo" width="80" height="36" class="me-3">
+                <img src="./visual/img/FPH.png" alt="FPH logo" width="80" height="24">
+              </div>
+              <h3 class="h6">Quality Auditing & Inspection</h3>
+              <p class="small text-muted">HACCP, Food Safety, and Environmental Health inspections with documented improvement actions.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end">
+              <a href="#qaPricing" class="btn btn-sm btn-outline-secondary">View pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing tables -->
+    <section class="mb-5">
+      <div class="row">
+        <!-- Environmental -->
+        <div class="col-lg-12 mb-4" id="envPricing">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4 class="h6 mb-0">Environmental Survey Pricing</h4>
+              <small class="text-muted">Trusted surveyor</small>
+            </div>
+            <div class="card-body">
+              <p class="text-muted">Prices vary by project complexity — listed below are typical ranges and examples.</p>
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Product</th>
+                      <th>Pricing</th>
+                      <th>Loyalty Discount</th>
+                      <th>Priority Surcharge</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Household Survey</td>
+                      <td>£6,500 — or £32.50/hr for small projects</td>
+                      <td>Up to 5%</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>Governmental / NGO Survey</td>
+                      <td>£8,500 — or £35.75/hr for < 6 month projects</td>
+                      <td>5% (NGO rate)</td>
+                      <td>10% (priority)</td>
+                    </tr>
+                    <tr>
+                      <td>Private Company Survey</td>
+                      <td>£15,000 — or £75.65/hr (min) for < 16 months</td>
+                      <td>Up to 20% repeat patron</td>
+                      <td>P.O.A</td>
+                    </tr>
+                    <tr>
+                      <td>Boutique / Custom Survey <br><small class="text-muted">(Tailored to client needs)</small></td>
+                      <td>P.O.A</td>
+                      <td>P.O.A</td>
+                      <td>P.O.A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="mt-3 d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#envDetails">More details</button>
+                <a href="contact.htm" class="btn btn-primary btn-sm">Contact for quote</a>
+              </div>
+
+              <div class="collapse mt-3" id="envDetails">
+                <div class="card card-body">
+                  <p class="mb-0">Detailed scope, timescales, and resource requirements are determined after the initial scoping call. Travel and laboratory fees may be additional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S.H.E -->
+        <div class="col-lg-12 mb-4" id="shePricing">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4 class="h6 mb-0">S.H.E Assessment & Services</h4>
+              <small class="text-muted">Accredited approaches</small>
+            </div>
+            <div class="card-body">
+              <p class="text-muted">Directed + coaching assessment methods. Package examples below:</p>
+
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Product</th>
+                      <th>Package Pricing</th>
+                      <th>Loyalty Discount</th>
+                      <th>Priority Surcharge</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10 Pack® Assessment</td>
+                      <td>£1,550</td>
+                      <td>N/A</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>Business Suite Pack® Assessment</td>
+                      <td>£4,500</td>
+                      <td>Up to 7.5%</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>All-Encompassing Pack® Assessment</td>
+                      <td>£17,500</td>
+                      <td>Up to 20%</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>Boutique Assessment</td>
+                      <td>P.O.A</td>
+                      <td>P.O.A</td>
+                      <td>P.O.A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-3 d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#sheDetails">More details</button>
+                <a href="contact.htm" class="btn btn-primary btn-sm">Contact for quote</a>
+              </div>
+
+              <div class="collapse mt-3" id="sheDetails">
+                <div class="card card-body">
+                  <p class="mb-0">Detailed scope, timescales, and resource requirements are determined after the initial scoping call. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quality Auditing -->
+        <div class="col-lg-12 mb-4" id="qaPricing">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4 class="h6 mb-0">Quality Auditing & Inspection Services</h4>
+              <small class="text-muted">Inspection and audit packages</small>
+            </div>
+            <div class="card-body">
+              <p class="text-muted">Accredited methodologies focused on continuous improvement and compliance.</p>
+
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Product</th>
+                      <th>Package Pricing</th>
+                      <th>Loyalty Discount</th>
+                      <th>Priority Surcharge</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10 Pack® Audit</td>
+                      <td>£1,550</td>
+                      <td>N/A</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>Business Suite Pack® Audit</td>
+                      <td>£4,500</td>
+                      <td>Up to 2.5%</td>
+                      <td>N/A</td>
+                    </tr>
+                    <tr>
+                      <td>Business Suite Pack® Extended Audit</td>
+                      <td>£10,500</td>
+                      <td>Up to 5%</td>
+                      <td>10% (priority)</td>
+                    </tr>
+                    <tr>
+                      <td>All-Encompassing Pack® Extended Audit</td>
+                      <td>£30,250</td>
+                      <td>Up to 25%</td>
+                      <td>10% (priority)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-3 d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#qaDetails">More details</button>
+                <a href="contact.htm" class="btn btn-primary btn-sm">Contact for quote</a>
+              </div>
+
+              <div class="collapse mt-3" id="qaDetails">
+                <div class="card card-body">
+                  <p class="mb-0">Detailed scope, timescales, and resource requirements are determined after the initial scoping call. This may include an initial in person visit which is costed separately. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion for additional services -->
+    <section class="mb-5">
+      <h2 class="h5">Project Management, Data & Web Development</h2>
+      <p class="text-muted">These services are offered case-by-case. Please request a consultation.</p>
+
+      <div class="accordion" id="otherServicesAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="accOneHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accOne" aria-expanded="false" aria-controls="accOne">
+              Project Management & TPM/Lean Assessments
+            </button>
+          </h3>
+          <div id="accOne" class="accordion-collapse collapse" aria-labelledby="accOneHeading" data-bs-parent="#otherServicesAccordion">
+            <div class="accordion-body small">
+              Tailored TPM and Lean assessments, coaching, and implementation support for operations optimisation. Free initial consultation upon request.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="accTwoHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accTwo" aria-expanded="false" aria-controls="accTwo">
+              Data Analysis & Full-Stack Web Development
+            </button>
+          </h3>
+          <div id="accTwo" class="accordion-collapse collapse" aria-labelledby="accTwoHeading" data-bs-parent="#otherServicesAccordion">
+            <div class="accordion-body small">
+              Case-by-case web & data projects: automation, dashboards, bespoke web applications. Free initial consultation upon request.
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3"><small class="text-muted">* discounts are discussed prior to project signatory and commencement.</small></p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-top py-4">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 Tri Nguyen Consultancy</p>
+      <small class="text-muted">ACIEH · AMRSC · AMRSB · AISEP · MBPR (Assoc.)</small>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="quoteModalLabel">Request a Quote — Tri Nguyen Consultancy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form id="quoteForm" class="needs-validation" novalidate>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="qName" class="form-label">Full name</label>
+                <input id="qName" name="name" type="text" class="form-control" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="qEmail" class="form-label">Email</label>
+                <input id="qEmail" name="email" type="email" class="form-control" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label for="qType" class="form-label">Service of interest</label>
+                <select id="qType" name="service" class="form-select" required>
+                  <option value="">Choose...</option>
+                  <option>Environmental Survey</option>
+                  <option>S.H.E Assessment</option>
+                  <option>Quality Auditing</option>
+                  <option>Project Management / Web Dev</option>
+                </select>
+                <div class="invalid-feedback">Please select a service.</div>
+              </div>
+              <div class="col-12">
+                <label for="qSummary" class="form-label">Project summary</label>
+                <textarea id="qSummary" name="summary" class="form-control" rows="5" placeholder="Brief description"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="reset" class="btn btn-outline-secondary">Clear</button>
+            <button type="submit" class="btn btn-primary">Send request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Theme Toggle JS -->
+  <script>
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+
+  // 1. Apply saved theme on page load
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.querySelector('i').classList.remove('fa-sun');
+    themeToggle.querySelector('i').classList.add('fa-moon');
+  }
+
+  // 2. Toggle theme on button click
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const icon = themeToggle.querySelector('i');
+
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark'); // save preference
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    } else {
+      localStorage.setItem('theme', 'light'); // save preference
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    }
+  });
+</script>
+</body>
+</html>
