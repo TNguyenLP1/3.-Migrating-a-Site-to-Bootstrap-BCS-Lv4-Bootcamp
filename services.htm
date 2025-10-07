@@ -448,6 +448,28 @@
       icon.classList.add('fa-sun');
     }
   });
+
+      // Bootstrap form validation
+    (function () {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } else {
+            event.preventDefault()
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'))
+            successModal.show()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+  </script>
+
 </script>
 </body>
 </html>
