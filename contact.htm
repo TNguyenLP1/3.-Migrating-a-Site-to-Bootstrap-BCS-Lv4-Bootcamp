@@ -1,22 +1,31 @@
 <!doctype html>
+<!-- Set document type to HTML -->
+
 <html lang="en">
+  <!-- Set Language to English -->
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Tri Nguyen Consultancy</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to bootstrap CSS -->
 
-  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Link to font awesome -->
 
-  <!-- Custom CSS -->
   <link href="visual/css/asset.css" rel="stylesheet">
-</head>
-<body class="bg-light">
+  <!-- Link to custom CSS -->
 
-    <!-- NAVBAR -->
+  <title>Tri Nguyen Consultancy — Professional Services</title>
+  <!-- Setting title -->
+
+</head>
+<!-- Setting page characteristics -->
+
+<body class="bg-light">
+  <!-- Setting default page colour to light mode -->
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
       <div class="container">
@@ -27,38 +36,77 @@
             <small class="text-muted">Consultancy</small>
           </div>
         </a>
+        <!-- Selectable button to bring back to main index htm -->
+        <!-- Top left logo and website branding selectable setting -->
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Selectable collapsible button to for navigation bar when page is adapted to mobile -->
 
         <div class="collapse navbar-collapse" id="mainNav">
+
           <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.htm" aria-current="page">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.htm">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="affiliation.htm">Affiliation</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contact.htm">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.htm"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.htm" aria-current="page"> Services </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.htm"> About </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="affiliation.htm"> Affiliation </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.htm"> Contact </a>
+              <!-- Setting active page highlight in nav bar -->
+            </li>
+            <!-- Navigation element -->
 
             <li class="nav-item ms-3">
               <form class="d-flex" role="search" aria-label="Site search">
-                <label for="navSearch" class="visually-hidden">Search</label>
+                <label for="navSearch" class="visually-hidden"> Search </label>
                 <input id="navSearch" class="form-control form-control-sm" type="search" placeholder="Search">
+                <!-- Formatting for search box - with "search" pre-emp placeholder -->
+
               </form>
             </li>
+            <!-- Search box -->
 
             <li class="nav-item ms-3">
-              <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false" aria-label="Toggle light/dark theme">
-                <i class="fa-regular fa-sun me-1"></i>
-                <span class="d-none d-sm-inline">Theme</span>
+              <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false" aria-label=
+              "Toggle light/dark theme">
+              <!-- Setting clickable button for theme change -->
+
+                <i class="fa-regular fa-sun me-1"> </i>
+                <!-- Setting changing (sun default) icon -->
+
+                <span class="d-none d-sm-inline"> Theme </span>
               </button>
+              <!-- Dark mode theme toggle switch -->
+
             </li>
           </ul>
+          <!-- Main navigation bar when page is in laptop -->
+
         </div>
+        <!-- Collapsible div for main nav bar - allow for transition into mobile -->
+
       </div>
     </nav>
+    <!-- Whole nav bar section -->
   </header>
+  <!-- Main top header -->
+
+
+
 
   <!-- CONTACT HERO -->
   <section class="bg-light py-5 text-center border-bottom">
@@ -179,85 +227,175 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="bg-white border-top py-4">
     <div class="container text-center">
       <p class="mb-1">&copy; 2025 Tri Nguyen Consultancy</p>
       <small class="text-muted">ACIEH · AMRSC · AMRSB · AISEP · MBPR (Assoc.)</small>
     </div>
   </footer>
+  <!-- Footer bar -->
 
-
-  <script>
-    // Bootstrap form validation
-    (function () {
-      'use strict'
-      const forms = document.querySelectorAll('.needs-validation')
-      Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          } else {
-            event.preventDefault()
-            const successModal = new bootstrap.Modal(document.getElementById('successModal'))
-            successModal.show()
-          }
-          form.classList.add('was-validated')
-        }, false)
-      })
-    })()
-  </script>
-
-  <!-- Success Modal -->
-  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title" id="successModalLabel"><i class="fa-solid fa-circle-check me-2"></i>Message Sent</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-header">
+          <h5 class="modal-title" id="quoteModalLabel">Request a Quote — Tri Nguyen Consultancy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body text-center py-4">
-          <p>Thank you for reaching out. We’ll get back to you shortly.</p>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-        </div>
+        <!-- Setting title for pop up box -->
+
+        <form id="quoteForm" class="needs-validation" novalidate>
+          <!-- Ensure input is required -->
+           
+          <div class="modal-body">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label for="qName" class="form-label">Full name</label>
+                <input id="qName" name="name" type="text" class="form-control" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+                <!-- Setting missing field output -->
+
+              </div>
+
+              <div class="col-md-6">
+                <label for="qEmail" class="form-label">Email</label>
+                <input id="qEmail" name="email" type="email" class="form-control" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+                <!-- Setting missing field output -->
+                
+              </div>
+
+              <div class="col-12">
+                <label for="qType" class="form-label">Service of interest</label>
+
+                <select id="qType" name="service" class="form-select" required>
+                  <option value="">Choose...</option>
+                  <option>Environmental Survey</option>
+                  <option>S.H.E Assessment</option>
+                  <option>Quality Auditing</option>
+                  <option>Project Management / Web Dev</option>
+                </select>
+                <!-- Setting selection -->
+                 
+                <div class="invalid-feedback">Please select a service.</div>
+                <!-- Setting missing field output -->
+
+              </div>
+              <!-- Setting service selection box -->
+
+              <div class="col-12">
+                <label for="qSummary" class="form-label">Project summary</label>
+                <textarea id="qSummary" name="summary" class="form-control" rows="5" placeholder="Brief description"></textarea>
+                <!-- Setting place holder text -->
+
+              </div>
+              <!-- Setting summary entry box -->
+
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="reset" class="btn btn-outline-secondary">Clear</button>
+            <button type="submit" class="btn btn-primary">Send request</button>
+          </div>
+          <!-- Setting clear and send button -->
+
+        </form>
+        <!-- Main contact form -->
+
       </div>
+      <!-- Main pop-up window with trimmed faded border match up with pop-up window -->
+
     </div>
+    <!-- Setting main inner section with faded outter boder-->
+
   </div>
+ <!-- Pop out box for contact -->
 
 
-  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Add bootstrap -->
 
-  <!-- Theme Toggle JS -->
   <script>
   const themeToggle = document.getElementById('themeToggle');
   const body = document.body;
 
-  // 1. Apply saved theme on page load
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
-    themeToggle.querySelector('i').classList.remove('fa-sun');
-    themeToggle.querySelector('i').classList.add('fa-moon');
+    themeToggle.querySelector('i').classList.replace('fa-sun','fa-moon');
   }
+  // Store theme mode locally so navigation across page maintain visual consistency unlike 2.HTM - Multi Page
 
-  // 2. Toggle theme on button click
   themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    const icon = themeToggle.querySelector('i');
+    // Add toggle
 
-    if (body.classList.contains('dark-mode')) {
-      localStorage.setItem('theme', 'dark'); // save preference
-      icon.classList.remove('fa-sun');
-      icon.classList.add('fa-moon');
-    } else {
-      localStorage.setItem('theme', 'light'); // save preference
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
+    const icon = themeToggle.querySelector('i');
+    // Allow for storing of icon
+
+    if(body.classList.contains('dark-mode')){
+      localStorage.setItem('theme','dark');
+      icon.classList.replace('fa-sun','fa-moon');
+      // Changing Icon section to moon for dark mode
+    } 
+    
+    else {
+      localStorage.setItem('theme','light');
+      icon.classList.replace('fa-moon','fa-sun');
+      // Changing Icon section to sun for light mode
     }
   });
-</script>
+// Theme selector
+
+(function () {
+      'use strict'
+      // Allow functions to run as soon as it's defined
+
+      const forms = document.querySelectorAll('.needs-validation')
+      // Selects all forms with the class '.needs-validation' and stores them in the "forms" variable
+
+      Array.from(forms).forEach(form => {
+        // Converts the variables into an array to use forEach() to loop over each form individually
+
+        form.addEventListener('submit', event => {
+          // Adds an event listener for the submit on each form
+
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          } 
+          // Uses the built-in .checkValidity() method to check if the form is valid
+
+          // If not 
+          // Use event.preventDefault() to stops the form from submitting
+          // Use event.stopPropagation() prevents the event from bubbling up to root
+
+          else {
+            event.preventDefault()
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'))
+            successModal.show()
+          }
+          // If the form is valid:
+          // Still prevents the default submission of "(event.preventDefault())", 
+          // Then creates a Bootstrap modal instance targeting '#successModal'
+          // Use ".show()" to displays the modal as a success message
+
+          form.classList.add('was-validated')
+          // Adds the class 'was-validated' to the form, which tells Bootstrap to show validation styles 
+          // (green/red highlights for inputs or lack thereof).
+
+        }, false)
+        // Use event bubbling
+
+      })
+    })()
+  // Adding bootstrap validation for contact us form  - allow for showing highlights in red as needed
+
+  </script>
+  <!-- Theme toggle and validation js script -->
+
 </body>
+<!-- End of section -->
+
 </html>
