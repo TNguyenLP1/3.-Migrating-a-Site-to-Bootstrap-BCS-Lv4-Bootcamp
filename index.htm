@@ -359,12 +359,18 @@
 
   themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
+    // Add toggle
+
     const icon = themeToggle.querySelector('i');
+    // Allow for storing of icon
+
     if(body.classList.contains('dark-mode')){
       localStorage.setItem('theme','dark');
       icon.classList.replace('fa-sun','fa-moon');
       // Changing Icon section to moon for dark mode
-    } else {
+    } 
+    
+    else {
       localStorage.setItem('theme','light');
       icon.classList.replace('fa-moon','fa-sun');
       // Changing Icon section to sun for light mode
@@ -374,22 +380,47 @@
 
 (function () {
       'use strict'
+      // Allow functions to run as soon as it's defined
+
       const forms = document.querySelectorAll('.needs-validation')
+      // Selects all forms with the class '.needs-validation' and stores them in the "forms" variable
+
       Array.from(forms).forEach(form => {
+        // Converts the variables into an array to use forEach() to loop over each form individually
+
         form.addEventListener('submit', event => {
+          // Adds an event listener for the submit on each form
+
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
-          } else {
+          } 
+          // Uses the built-in .checkValidity() method to check if the form is valid
+
+          // If not 
+          // Use event.preventDefault() to stops the form from submitting
+          // Use event.stopPropagation() prevents the event from bubbling up to root
+
+          else {
             event.preventDefault()
             const successModal = new bootstrap.Modal(document.getElementById('successModal'))
             successModal.show()
           }
+          // If the form is valid:
+          // Still prevents the default submission of "(event.preventDefault())", 
+          // Then creates a Bootstrap modal instance targeting '#successModal'
+          // Use ".show()" to displays the modal as a success message
+
           form.classList.add('was-validated')
+          // Adds the class 'was-validated' to the form, which tells Bootstrap to show validation styles 
+          // (green/red highlights for inputs or lack thereof).
+
         }, false)
+        // Use event bubbling
+
       })
     })()
-  // Adding bootstrap validation for contact us form  - allow for showing highlights as needed
+  // Adding bootstrap validation for contact us form  - allow for showing highlights in red as needed
 
   </script>
   <!-- Theme toggle js script -->
