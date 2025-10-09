@@ -1,42 +1,42 @@
-
-/* ==========================
-   Base Styles (Light Mode)
-========================== */
-
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f8f9fa; /* light background */
   color: #212529; /* dark text */
   transition: background-color 0.3s, color 0.3s;
 }
+/* Main pages styling */
 
 a {
   text-decoration: none;
   color: #0d6efd;
   transition: color 0.3s;
 }
+/* setting link colour */
 
 a:hover {
   color: #0a58ca;
   text-decoration: underline;
 }
+/* Setting link hover colour */
 
-/* Navbar */
+
 .navbar {
   transition: background-color 0.3s, color 0.3s;
 }
+/* Navbar transition timing */
 
 .navbar .nav-link {
   color: #212529;
   transition: color 0.3s;
 }
+/* Link styling */
 
 .navbar .nav-link.active {
   font-weight: 600;
   color: #0d6efd;
 }
+/* Link styling for active page (page you are on) */
 
-/* Cards */
 .card {
   background-color: #ffffff;
   color: #212529;
@@ -44,8 +44,8 @@ a:hover {
   border: none;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
+/* Card background setting */
 
-/* Buttons */
 .btn-primary {
   background-color: #0d6efd;
   border-color: #0d6efd;
@@ -70,13 +70,12 @@ a:hover {
   background-color: #6c757d;
   color: #fff;
 }
+/* Button Styling */
 
-/* General Section */
 section {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Utility & Spacing */
 img {
   max-width: 100%;
   height: auto;
@@ -92,16 +91,14 @@ blockquote footer {
   color: #6c757d;
 }
 
-/* ==========================
-   Dark Mode (Enhanced Contrast)
-========================== */
+/* XXXXXX Base styling - light mode XXXXXX */
 
 body.dark-mode {
   background-color: #101010 !important; /* overall dark background */
   color: #f0f0f0; /* brighter text for readability */
 }
 
-/* Links */
+
 body.dark-mode a {
   color: #a7c8ff;
 }
@@ -114,8 +111,8 @@ body.dark-mode a:hover {
   color: #4e8cff;
   text-decoration: underline;
 }
+/* Links */
 
-/* Navbar */
 body.dark-mode .navbar {
   background-color: #1a1a1a !important;
   border-color: #333 !important;
@@ -128,14 +125,14 @@ body.dark-mode .navbar .nav-link {
 body.dark-mode .navbar .nav-link.active {
   color: #b89cff !important; /* accent purple */
 }
+/* Navbar */
 
-/* Section Containers */
 body.dark-mode section {
   background-color: #181818 !important;
   color: #f0f0f0;
 }
+/* Section Containers */
 
-/* Cards */
 body.dark-mode .card {
   background-color: #242424 !important;
   color: #f5f5f5;
@@ -145,8 +142,8 @@ body.dark-mode .card {
 body.dark-mode .card .text-muted {
   color: #dcdcdc !important;
 }
+/* Cards */
 
-/* Table Styling */
 body.dark-mode .table,
 body.dark-mode .table th,
 body.dark-mode .table td {
@@ -160,12 +157,13 @@ body.dark-mode .table-responsive {
   padding: 0.5rem;
   border-radius: 0.25rem;
 }
+/* Table Styling */
 
-/* Accordion */
 body.dark-mode .accordion-button {
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
+/* Accordion */
 
 body.dark-mode .accordion-button:not(.collapsed) {
   background-color: #2a2a2a;
@@ -177,7 +175,6 @@ body.dark-mode .accordion-body {
   color: #f0f0f0;
 }
 
-/* Forms */
 body.dark-mode .form-control,
 body.dark-mode .form-select,
 body.dark-mode .form-control:focus,
@@ -190,8 +187,7 @@ body.dark-mode .form-select:focus {
 body.dark-mode .form-control::placeholder {
   color: #bbb;
 }
-
-/* Modal */
+/* Forms */
 
 body.dark-mode #successModal .modal-header {
   background-color: #b89cff !important;
@@ -206,8 +202,8 @@ body.dark-mode .modal-content {
 body.dark-mode .modal-header .btn-close {
   filter: invert(1);
 }
+/* Modal */
 
-/* Buttons */
 body.dark-mode .btn-primary {
   background-color: #b89cff !important;
   border-color: #b89cff !important;
@@ -237,8 +233,8 @@ body.dark-mode .btn-outline-secondary:hover {
   background-color: #b0b0b0;
   color: #121212;
 }
+/* Buttons */
 
-/* Blockquotes */
 body.dark-mode blockquote {
   border-left-color: #9ecfff;
   color: #dcdcdc;
@@ -247,18 +243,21 @@ body.dark-mode blockquote {
 body.dark-mode blockquote footer {
   color: #b0cfff;
 }
+/* Blockquotes */
 
-/* CTA Section */
 body.dark-mode .bg-light.border-top {
   background-color: #1a1a1a !important;
   border-color: #333 !important;
   color: #f0f0f0;
 }
+/* Farewell Section */
 
-/* Footer */
 body.dark-mode footer {
   background-color: #1a1a1a !important;
   color: #dcdcdc !important;
   border-color: #333 !important;
 }
+/* Footer section*/
+
+/* XXXXXX Dark Mode styling XXXXXX */
 

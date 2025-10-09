@@ -1,21 +1,21 @@
-// DOM elements
 const themeToggleBtn = document.getElementById('themeToggle');
 const body = document.body;
+// DOM elements
 
 if (themeToggleBtn) {
-  // Load saved theme
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') body.classList.add('dark-mode');
+  // Load saved theme
 
-  // Update icon on load
   updateToggleIcon();
+  // Update icon on load
 
-  // Toggle theme on button click
   themeToggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
     updateToggleIcon();
   });
+  // Toggle theme on button click
 
   function updateToggleIcon() {
     const icon = themeToggleBtn.querySelector('i');
@@ -27,4 +27,6 @@ if (themeToggleBtn) {
       icon.classList.add('fa-sun');
     }
   }
+  // Icon transitioning
+
 }
