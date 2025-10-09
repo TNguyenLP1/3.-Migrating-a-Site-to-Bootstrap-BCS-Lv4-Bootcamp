@@ -105,30 +105,28 @@
   </header>
   <!-- Main top header -->
 
-
-
-
-  <!-- CONTACT HERO -->
   <section class="bg-light py-5 text-center border-bottom">
     <div class="container">
       <h1 class="display-6 fw-bold">Contact Us</h1>
       <p class="lead text-muted">We’re here to help you achieve environmental, safety, and quality excellence.</p>
     </div>
   </section>
+  <!-- Intro section -->
 
-  <!-- CONTACT FORM SECTION -->
   <section class="py-5">
     <div class="container">
       <div class="row g-5">
         
-        <!-- LEFT: CONTACT INFO -->
         <div class="col-lg-5">
           <div class="card shadow-sm border-0 h-100">
+
             <div class="card-body">
+
               <h2 class="h5 fw-bold mb-3">Get in Touch</h2>
               <p class="text-muted mb-4">
                 Fill in the form or use the contact details below to reach our team. We aim to respond within 24 hours.
               </p>
+              <!-- Heading -->
 
               <ul class="list-unstyled">
                 <li class="mb-3">
@@ -144,6 +142,7 @@
                   <strong>Phone:</strong> +41 (0) 923 572 139
                 </li>
               </ul>
+              <!-- Contact info list setting -->
 
               <div class="mt-4">
                 <a href="https://www.linkedin.com/in/tri-nguyen-476619170/" target="_blank" class="btn btn-outline-primary btn-sm me-2">
@@ -156,41 +155,52 @@
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
+              <!-- Adding social icon and link -->
 
-        <!-- RIGHT: FORM -->
+            </div>
+            <!-- Main card body  -->
+
+          </div>
+          <!-- Card shadow -->
+
+        </div>
+        <!-- Setting left hand side for contact info -->
+
         <div class="col-lg-7">
           <div class="card shadow-sm border-0">
             <div class="card-body">
               <h2 class="h5 fw-bold mb-3">Send Us a Message</h2>
 
               <form class="needs-validation" novalidate>
+
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label for="firstName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="firstName" required>
                     <div class="invalid-feedback">Please enter your first name.</div>
                   </div>
+                  <!-- Setting input form and missing input message -->
 
                   <div class="col-md-6">
                     <label for="lastName" class="form-label">Last Name</label>
                     <input type="text" class="form-control" id="lastName" required>
                     <div class="invalid-feedback">Please enter your last name.</div>
                   </div>
+                  <!-- Setting input form and missing input message -->
 
                   <div class="col-md-6">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" required>
                     <div class="invalid-feedback">Please provide a valid email address.</div>
                   </div>
+                  <!-- Setting input form and missing input message -->
 
                   <div class="col-md-6">
                     <label for="subject" class="form-label">Subject</label>
                     <input type="text" class="form-control" id="subject" required>
                     <div class="invalid-feedback">Please enter a subject.</div>
                   </div>
+                  <!-- Setting input form and missing input message -->
 
                   <div class="col-12">
                     <label for="message" class="form-label">Message</label>
@@ -198,34 +208,55 @@
                     <div class="invalid-feedback">Please enter a message.</div>
                   </div>
                 </div>
+                <!-- Setting input form and missing input message -->
 
                 <div class="d-grid mt-4">
                   <button class="btn btn-primary btn-lg" type="submit">
-                    <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                    <i class="fa-solid fa-paper-plane me-2"></i> Send Message
                   </button>
                 </div>
+                <!-- Setting submit button -->
+
               </form>
+              <!-- Main form set to novalidate to use own js validation -->
+
             </div>
+            <!-- Main card section -->
+
           </div>
+          <!-- Setting card shadow -->
+
         </div>
+        <!-- Setting right hand side for form filling input -->
 
       </div>
-    </div>
-  </section>
+      <!-- Setting inside section -->
 
-  <!-- MAP / LOCATION -->
+    </div>
+    <!-- Setting container for flexbox -->
+
+  </section>
+  <!-- Main form section -->
+
   <section class="py-5 bg-white border-top">
     <div class="container text-center">
       <h2 class="h5 fw-bold mb-3">Our Location</h2>
       <p class="text-muted mb-4">Visit us for consultations, training sessions, and audits.</p>
+      <!-- Heading -->
+
       <div class="ratio ratio-16x9 shadow-sm rounded-3">
         <iframe 
           src="https://www.google.com/maps?q=Zug,+Switzerland&output=embed" 
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
+      <!-- Map elements -->
+
     </div>
+    <!-- Align items and text to center of container -->
+
   </section>
+  <!-- Adding map elements -->
 
   <footer class="bg-white border-top py-4">
     <div class="container text-center">
@@ -312,6 +343,24 @@
 
   </div>
  <!-- Pop out box for contact -->
+
+ <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel"> Form Successfully Submitted!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for your message, this has been sent successfully. And we will reach out to you in due course.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Add success add model for pop up box -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
