@@ -1,7 +1,3 @@
-const themeToggleBtn = document.getElementById('themeToggle');
-const body = document.body;
-// DOM elements
-
 if (themeToggleBtn) {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') body.classList.add('dark-mode');
